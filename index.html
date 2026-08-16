@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="az">
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Siyəzən Heyvandarlıq</title>
+      <link rel="icon" href="images/logo.png" type="image/png" />
+      <style>
+         body {
+            margin: 0;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #212121;
+            font-family: 'Lato', Arial, sans-serif;
+            text-align: center;
+         }
+         .gate {
+            padding: 40px;
+         }
+         .gate img {
+            width: 90px;
+            margin-bottom: 20px;
+         }
+         .gate h1 {
+            color: #fff;
+            font-size: 22px;
+            font-weight: 600;
+            margin: 0 0 25px 0;
+            letter-spacing: 1px;
+         }
+         .gate a {
+            display: inline-block;
+            margin: 0 8px;
+            padding: 12px 28px;
+            background: #f4cb1e;
+            color: #212121;
+            font-weight: 700;
+            text-decoration: none;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border-radius: 2px;
+         }
+         .gate a:hover {
+            background: #fff;
+         }
+      </style>
+      <script>
+         (function () {
+            var lang = (navigator.language || navigator.userLanguage || "az").toLowerCase();
+            var target = "az/index.html";
+            if (lang.indexOf("ru") === 0) {
+               target = "ru/index.html";
+            } else if (lang.indexOf("en") === 0) {
+               target = "en/index.html";
+            }
+            window.location.replace(target);
+         })();
+      </script>
+   </head>
+   <body>
+      <noscript>
+         <div class="gate">
+            <img src="images/logo.png" alt="Siyəzən Heyvandarlıq" />
+            <h1>Siyəzən Heyvandarlıq</h1>
+            <a href="az/index.html">AZ</a>
+            <a href="en/index.html">EN</a>
+            <a href="ru/index.html">RU</a>
+         </div>
+      </noscript>
+      <div class="gate">
+         <img src="images/logo.png" alt="Siyəzən Heyvandarlıq" />
+         <h1>Siyəzən Heyvandarlıq</h1>
+         <a href="az/index.html">AZ</a>
+         <a href="en/index.html">EN</a>
+         <a href="ru/index.html">RU</a>
+      </div>
+   </body>
+</html>
