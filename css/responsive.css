@@ -51,10 +51,6 @@
         margin-top: 30px;
         margin-bottom: 30px;
     }
-    .logo::after {
-        height: 96px;
-        left: -77px;
-    }
     .text-bg h1 {
         font-size: 49px;
         line-height: 65px;
@@ -83,10 +79,6 @@
 }
 
 @media (min-width: 576px) and (max-width: 767px) {
-    .logo::after {
-        width: 78px;
-        height: 115px;
-    }
     .logo {
         padding-top: 15px;
     }
@@ -187,11 +179,19 @@
     .header {
         padding: 30px 0px 30px 0px;
     }
+    .header .container-fluid > .row {
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .header .row > div {
+        flex: 0 0 auto;
+        max-width: none;
+        width: auto;
+    }
     .logo {
         text-align: center !important;
         padding-bottom: 6px;
-        float: left;
-        padding-left: 37%;
     }
     .d_none {
         display: none;
@@ -276,33 +276,38 @@
         font-size: 21px;
     }
     .navigation.navbar {
-        float: right;
+        float: none;
         display: inherit !important;
         padding: 0 !important;
-        width: 100%;
-        margin-top: -38px;
+        width: auto;
     }
     .navigation .navbar-collapse {
         background: #000;
         padding: 20px;
-        margin-top: 69px;
-        position: absolute;
-        width: 100%;
-        margin-right: 20px;
+        margin-top: 15px;
+        position: fixed;
+        left: 0;
+        right: 0;
+        width: auto;
+        margin-right: 0;
         z-index: 999;
+        max-height: calc(100vh - 100px);
+        overflow-y: auto;
     }
     .navigation.navbar-dark .navbar-nav .nav-link {
         padding: 10px 0;
         color: #fff;
     }
     .navigation.navbar-dark .navbar-toggler {
-        float: right;
-        margin-right: 2px;
+        margin-right: 0;
         border: inherit;
     }
     .navigation.navbar-dark .navbar-toggler-icon {
         background: url(../images/menu_icon.png);
         background-repeat: no-repeat;
+        background-position: center;
+        width: 1.5em;
+        height: 1.5em;
     }
 }
 

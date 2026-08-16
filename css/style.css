@@ -374,20 +374,13 @@ ul.btn li:last-child {
 
 .logo {
      position: relative;
-     padding-left: 50%;
      padding-top: 6px;
+     text-align: center;
 }
 
-.logo::after {
-     position: absolute;
-     content: "";
-     width: 136px;
-     height: 110px;
-     left: -45px;
-     top: -30px;
-     background: url(../images/top_head.png);
-     background-repeat: no-repeat;
-     border-right: #c6cad5 solid 15px;
+.logo img {
+     max-height: 70px;
+     width: auto;
 }
 
 
@@ -613,7 +606,6 @@ ul.btn li:last-child {
 
 .choose_img figure {
      margin: 0;
-     margin-left: -50px;
      overflow: hidden;
 }
 
@@ -1194,4 +1186,3 @@ ul.link li a::after {
      font-weight: 600;
      color: #242323;
 }
-
